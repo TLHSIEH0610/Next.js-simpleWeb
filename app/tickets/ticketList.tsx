@@ -1,11 +1,6 @@
-import next from "next";
+import Link from "next/link";
+import { Ticket } from "./models";
 
-interface Ticket {
-  id: string;
-  title: string;
-  content: string;
-  priority: "high" | "low" | "middle";
-}
 const listTickets = async (): Promise<Ticket[]> => {
   const res = await fetch("http://localhost:4000/tickets", {
     next: {
@@ -17,5 +12,10 @@ const listTickets = async (): Promise<Ticket[]> => {
 
 export default async () => {
   const tickets = await listTickets();
-  return tickets.map((ticket) => <div>{ticket.title}</div>);
+  return tickets.map((ticket) => (
+    <div>
+      <Link href={`/tickets/${ticket.id}`}>detail</Link>
+      {ticket.title}
+    </div>
+  ));
 };
