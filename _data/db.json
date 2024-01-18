@@ -1,0 +1,25 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Got a 404 error when I refresh the page",
+      "content": "Hi team, this is sucked",
+      "userName": "DFG@email.com",
+      "priority": "middle"
+    },
+    {
+      "id": "2",
+      "title": "Cannot view the details of my profile",
+      "content": "Hi team, please help me to edit my email",
+      "userName": "123@email.com",
+      "priority": "how"
+    },
+    {
+      "id": "3",
+      "title": "Expected first home buyer duty concession",
+      "content": "THis doesn't work",
+      "userName": "ABC@email.com",
+      "priority": "heigh"
+    }
+  ]
+}
